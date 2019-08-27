@@ -1,0 +1,136 @@
+h1, h3
+{
+    font-family: 'Museo Sans 500', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+h1
+{
+    font-size: 36px;
+}
+h3
+{
+    font-size: 22px;
+}
+p
+{
+    font-size: 16px;
+}
+#logo img
+{
+    width: 140px;
+    height: 30px;
+}
+body
+{
+    margin: 0 0.5 0 0.5;
+}
+.page
+{
+    display: grid;
+    grid-template-columns: 12% 60% auto;
+    grid-auto-rows: 2em;
+    box-sizing: border-box;
+    width: 100%;
+    height: 5em;
+    position: fixed;
+    background-color: #eeeeee;
+}
+#navigation .menu
+{
+    display:grid;
+    grid-template-columns: repeat(4, 25%); 
+    text-align: center;
+    list-style: none;
+}
+#navigation .menu a
+{
+    text-decoration: none;
+}
+#navigation .menu .nav-category .nav-subcategory
+{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    width: 1.75em;
+    box-shadow: 0em 0.5em 0.8em 0em rgba(0,0,0,0.2);
+    padding: auto auto;
+    z-index: 1;
+    list-style: none;
+    text-align: center;
+}
+#navigation .menu .nav-category .nav-subcategory a:hover
+{
+    background-color: #eeeeee;
+}
+#navigaiton .menu .nav-category
+{
+    position: relative;
+    display: inline-block;
+}
+#navigation .menu .nav-category .nav-subcategory a
+{
+    color: black;
+    padding: auto;
+    text-decoration: none;
+    display: block;
+}
+#navigation .menu .nav-category:hover .nav-subcategory
+{
+    display: block;
+}
+
+#navigation .menu .nav-category:hover
+{
+    background-color: #f8f8f8;
+}
+.home
+{
+    background-image: url(media/galaxy-s10_highlight_kv_l.jpg);
+    background-attachment: fixed;   
+    padding-top: 3.5em;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.introduction
+{
+    background-color: rgba(0,25,25,0.5);
+    height: 84vh;
+    padding-top: 3.5em;
+    background-repeat: no-repeat;
+    background-attachment: ;
+    position: relative;
+    z-index: -2;
+}
+
+.buy-pic
+{
+    background-image: url(media/SamsungGalaxyS10main-920x613.png); 
+    padding-top: 3.5em;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.buy-form
+{
+    height: 84vh;
+    padding-top: 3.5em;
+    background-image: url(media/texture1.png);
+}
+
+.features
+{
+    background-color: rgba(0,25,25,0.5);
+    height: 84vh;
+    padding-top: 3.5em;
+    background-repeat: no-repeat;
+    background-attachment: ;
+    position: relative;
+    z-index: -2;
+}
