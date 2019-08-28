@@ -23,7 +23,7 @@ p
 {
     width: 150px;
     height: 20px;
-    padding: 0 0 0 1em;
+    padding: 0 0 0 0.7vh;
 }
 body
 {
@@ -37,11 +37,11 @@ body
         flex-wrap: wrap;
         /* flex-direction: column; */
         justify-content: space-evenly;
-        box-sizing: border-box;
+        /* box-sizing: border-box; */
         width: 100%;
         height: 12vh;
         position: fixed;
-        background-color: #ffffff;
+        background-color: rgba(255,255,255,0.75);
     } 
    .page #logo
    {
@@ -88,11 +88,11 @@ body
         flex-wrap: wrap;
         /* flex-direction: column; */
         justify-content: space-evenly;
-        box-sizing: border-box;
+        /* box-sizing: border-box; */
         width: 100%;
         height: 12vh;
         position: fixed;
-        background-color: #ffffff;
+        background-color: rgba(255,255,255,0.75);
     } 
    .page #logo
    {
@@ -191,11 +191,11 @@ body
 {
     display: flex;
     justify-content: space-between;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     width: 100%;
     height: 10vh;   
     position: fixed;
-    background-color: #ffffff;
+    background-color: rgba(255,255,255,0.75)
 }
 .page #bars
 {
@@ -261,8 +261,8 @@ body
 {
     background-image: url(galaxy-s10_highlight_kv_l.jpg);
     background-attachment: fixed;   
-    padding-top: 3.5em;
-    height: 100vh;
+    padding-top: 10vh;
+    height: 90vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -270,12 +270,15 @@ body
 
 .introduction
 {
-    background-color: rgba(0,25,25,0.5);
-    height: 84vh;
-    padding-top: 3.5em;
+    background-color: #040404;
+    height: 90vh;
+    padding-top: 10vh;
+    background-image: url(img4.jpg);
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment: cover;
+    background-position: center;  
     position: relative;
+    color: #ffffff;
     z-index: -2;
 }
 
@@ -292,18 +295,28 @@ body
 
 .buy-form
 {
-    height: 84vh;
-    padding-top: 3.5em;
+    height: 85vh;
+    padding-top: 10vh;
     background-image: url(texture1.png);
 }
 
-.features
+.features #Display
 {
-    background-color: rgba(0,25,25,0.5);
-    height: 84vh;
-    padding-top: 3.5em;
+    background-color: rgba(0,0,0,1);
+    color: rgb(255,255,255);
+    
+    background-image: url(infi_disp2.webp);
+    height: 85vh;
+    padding-top: 10vh;
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment: cover;
+    background-position: right;
     position: relative;
-    z-index: -2;
+    z-index: -3 ;
+}
+footer
+{
+    position: relative;
+    z-index: 1;
+    height: 5vh;
 }
