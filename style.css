@@ -201,3 +201,21 @@ section#rsvp{
         font-size: 16px;
     }
 }
+
+::-webkit-scrollbar{
+    width: 17px;
+}
+
+::-webkit-scrollbar-track{
+    border: 5px solid #3B3B98;
+    box-shadow: inset 0 0 2.5px 2px rgba(24, 44, 97, 0.5);
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(
+        45deg,
+        #1B9CFC,
+        #55E6C1
+    );
+    border-radius: 3px;
+}
