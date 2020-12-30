@@ -151,7 +151,7 @@ section p {
 }
 
 section#location .content-container{
-    backdrop-filter: blur(7px);
+    backdrop-filter: blur(4px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -172,7 +172,7 @@ section#location .content-container .map-wrapper .googlemap{
 
 /* Section images */
 section#location{
-    background: url('https://source.unsplash.com/r2NBj6GAJzw/1600x900') no-repeat center center/ cover;
+    background: url('https://source.unsplash.com/cAm3a6N35dE/1600x900') no-repeat center center/ cover;
 }
 section#things-to-do{
     background: url('https://source.unsplash.com/kIUQn79hLW0/1600x900') no-repeat center center/ cover;
