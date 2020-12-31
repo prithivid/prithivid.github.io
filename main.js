@@ -23,6 +23,30 @@
 
 // window.onload = changeImage;
 
+// Hamburger animations
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
+const link = document.querySelectorAll(".nav-links li a");
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    links.forEach(link => {
+        link.classList.toggle('fade');
+    });
+});
+
+link.forEach(a => {
+    a.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+    links.forEach(link => {
+        link.classList.remove('fade');
+    });
+    });
+})
+
+
+// Date Diifference function
 function dateDifference() {
     const date1 = new Date('2/1/2021');
     const date2 = new Date();
