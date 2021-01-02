@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wedding Invitation for Sathish and kavi">
   <title>Sathish weds Kavi</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="css/hearts-37208.svg">
@@ -26,6 +27,7 @@
       </ul>
     </nav>
     <section class="title-content" id="home">
+      <img id="wedding-svg" src="css/undraw_wedding_t1yl.svg" alt="wedding-svg">
       <h1>Sathish Kumar weds Kavinilavu</h1>
       <p>February 1, 2021 . Panruti, Tamil Nadu</p>
       <p id="rdays"></p>
@@ -53,9 +55,39 @@
     </section>
     <section id="rsvp">
       <h2>RSVP</h2>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, quibusdam maiores! Tempore molestiae ipsum ratione!</p>
+      <p class="rsvp-description">Kindly Respond!</p>
+      <div class="thank-you-message"><img id="thank-you-hearts" src="css/undraw_super_thank_you_obwk.svg" alt="thank-you-hearts">
+        <p class="thanks-message">Thank you for sharing your response!</p>
+      </div>
+      <form class="rsvp-form" method="POST" action="https://script.google.com/macros/s/AKfycbzz09PZJ5rxQ-aUROmrHWhK3Isy9ti7MbRzxC1uxOfcAW98pOPYAGTU0A/exec">
+        <div class="names-section field">
+          <input type="text" name="names" id="names" autocomplete="off" required />
+          <label for="names" class="label-names"><span class="content-names">Name(s)</span></label>
+        </div>
+        <div class="radio-group field">
+          <label class="radio">
+            <input type="radio" name="status" value="accepted">
+            Accept with pleasure
+            <span></span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="status" value="declined">
+            Decline with regret
+            <span></span>
+          </label>
+        </div>
+        <div class="names-section field">
+          <input type="text" name="wishes" id="wishes" autocomplete="off" required/>
+          <label for="wishes" class="label-names"><span class="content-names">Wishes</span></label>
+        </div>
+        <div class="actions field">
+          <button type="submit" class="action-button">Confirm</button>
+          <button type="reset" class="action-button">Clear</button>
+        </div>
+      </form>
     </section>
   </div>
   <script src="main.js" type="text/javascript"></script>
+  <script data-cfasync="false" src="rsvp-form.js" type="text/javascript"></script>
 </body>
 </html>
