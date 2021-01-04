@@ -40,14 +40,20 @@ body, html {
     display: flex;
     width: 100%;
     height: 60px;
-    background: rgba(37, 204, 247,0.75)
+    background: rgba(37, 204, 247,0.75);
+    justify-content: space-between;
+    flex-direction: row;
 }
-
 .navbar .logo{
-    font-size: 28px;
-    font-family: scriptina;
+    font-size: 24px;
+    font-family: greatvibes;
+    font-weight: bold;
     color: #3B3B98;
-    margin: 0 1vw;
+    position: absolute;
+    left: 4%;
+    top: 50%;
+    transform: translate(-4%, -50%) scale(1);
+    z-index: 3;
 }
 
 .navbar ul{
@@ -86,6 +92,30 @@ body, html {
     100% {
         filter: blur(2px);
         -webkit-filter: blur(2px);
+    }
+}
+
+@keyframes slide-phone {
+    0% {
+        background-image: url("https://source.unsplash.com/7Y_8m9shGj8/720x1280");
+    }
+    16.67% {
+        background-image: url("https://source.unsplash.com/dFa8HXAOuWw/720x1280");
+    }
+    33.33% {
+        background-image: url("https://source.unsplash.com/BU5C725AQY4/720x1280");
+    }
+    50% {
+        background-image: url("https://source.unsplash.com/WI_XeqX-A1M/720x1280");
+    }
+    66.67% {
+        background-image: url("https://source.unsplash.com/F0_qeY5OWJE/720x1280");
+    }
+    83.33% {
+        background-image: url("https://source.unsplash.com/KdcSLoK8iKU/720x1280");
+    }
+    100% {
+        background-image: url("https://source.unsplash.com/Gfb9TFFOcqw/720x1280");
     }
 }
 
@@ -378,6 +408,25 @@ section#rsvp{
 @font-face {
     font-family: greatvibes;
     src: url('css/font/GreatVibes-Regular.ttf');
+}
+
+@media only screen and (max-width: 720px) {
+    #background{
+        animation: slide-phone 20s infinite ease-in;
+    }
+    .title-content{
+        backdrop-filter: blur(3px);
+    }
+    .title-content h1 {
+        color: #3B3B98;
+        line-height: 2.5;
+        font-weight: lighter;
+    }
+    
+    .title-content p {
+        color: #82589F;
+    }
+    
 }
 
 @media only screen and (max-width: 900px) {
