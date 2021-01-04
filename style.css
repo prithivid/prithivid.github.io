@@ -29,8 +29,8 @@ body, html {
 #wedding-svg{
     height: 20%;
     width: 20%;
-    min-width: 300px;
-    min-height: 300px;
+    min-width: 200px;
+    min-height: 200px;
 }
 
 .navbar {
@@ -125,9 +125,10 @@ body, html {
 
 .title-content h1 {
     font-size: 72px;
-    font-family: scriptina;
+    font-family: playball;
     color: #1B9CFC;
     line-height: 2.5;
+    font-weight: lighter;
 }
 
 .title-content p {
@@ -166,15 +167,19 @@ section#location .content-container{
 }
 
 section#location .content-container .map-wrapper{
-    border: 10px groove #f0f0f0;
+    border: 10px groove #25CCF7;
     border-radius: 7px;
-    max-width: 1080px;
+    /* width: 1080px;
     min-width: 70%;
-    max-height: 600px;
+    height: 600px;
+    min-height: 300px; */
+    width: 50%;
+    height: 50vh;
 }
 
 section#location .content-container .map-wrapper .googlemap{
     width: 100%;
+    height: 100%;
 }
 
 /* Section images */
@@ -322,10 +327,7 @@ section#rsvp{
     position: relative;
     padding-left: 30px;
     cursor: pointer;
-}
-
-.radio + .radio{
-    margin-left: 35px;
+    margin: 0 10px;
 }
 
 .radio input[type="radio"]{
@@ -365,6 +367,14 @@ section#rsvp{
     font-family: scriptina;
     src: url('css/font/SCRIPTIN.ttf');
 }
+@font-face {
+    font-family: brielle;
+    src: url('css/font/Brielle.otf');
+}
+@font-face {
+    font-family: playball;
+    src: url('css/font/Playball-Regular.ttf');
+}
 
 @media only screen and (max-width: 900px) {
     .title-content h1 {
@@ -373,6 +383,16 @@ section#rsvp{
     
     .title-content p {
         font-size: 16px;
+    }
+
+    section h2{
+        font-size: 32px;
+        /* color: #3B3B98; */
+    }
+    
+    section p {
+        font-size: 14px;
+        /* color: #182C61; */
     }
 
     .nav-links{
@@ -443,6 +463,56 @@ section#rsvp{
         height: 3px;
         background: #3B3B98;
         margin: 5px;
+    }
+
+    .names-section label{
+        font-size: 15px;
+    }
+
+    label.radio{
+        font-size: 14px;
+    }
+
+    .radio{
+        padding-left: 22px;
+    }
+
+    .radio span{
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        border: 2px solid #182C61;
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 2px;
+    }
+    .radio span::after{
+        content: "";
+        height: 9px;
+        width: 9px;
+        background: #182C61;
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        border-radius: 50%;
+        transition: 300ms ease-in-out 0s;
+    }
+    .action-button{
+        font-family: cursive;
+        width: 100px;
+        background-color: #182C61;
+        border: none;
+        border-radius: 5%;
+        color: white;
+        padding: 10px 24px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 4px 2px;
     }
 }
 
