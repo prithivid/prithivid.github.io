@@ -1,13 +1,15 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body, html {
     height: 100vh;
     font-family: cursive;
     line-height: 1.6;
     overflow: hidden;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
 
 #background{
@@ -193,17 +195,22 @@ section#location .content-container{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 section#location .content-container .map-wrapper{
-    border: 10px groove #25CCF7;
+    /* border: 10px groove #25CCF7;
     border-radius: 7px;
-    /* width: 1080px;
+    position: absolute;
+    width: 1080px;
     min-width: 70%;
     height: 600px;
     min-height: 300px; */
-    width: 50%;
-    height: 50vh;
+    width: 100%;
+    height: 100vh;
+    padding-top: 60px;
+    /* top: 0;
+    left: 0; */
 }
 
 section#location .content-container .map-wrapper .googlemap{
@@ -236,6 +243,7 @@ section#rsvp{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-sizing: content-box;
 }
 
 #thank-you-hearts{
