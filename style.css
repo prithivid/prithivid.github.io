@@ -184,6 +184,13 @@ section h2{
     color: #3B3B98;
 }
 
+section h3{
+    font-size: 2rem;
+    color: #1B9CFC;
+    text-decoration: underline;
+    margin-top: 5vh;
+}
+
 section p {
     font-size: 1.5rem;
     color: #182C61;
@@ -226,13 +233,17 @@ section#location{
     background: url('https://source.unsplash.com/kIUQn79hLW0/1600x900') no-repeat center center/ cover;
 } */
 section#schedule-of-events{
-    background: url('https://source.unsplash.com/-pcFcc64vGE/1600x900') no-repeat center center/ cover;
+    background: url('https://source.unsplash.com/xXaLfz6V9rQ/1600x900') no-repeat center center/ cover;
 }
 section#photos{
     background: url('https://source.unsplash.com/qqd8APhaOg4/1600x900') no-repeat center center/ cover;
 }
 section#rsvp{
     background: url('https://source.unsplash.com/_Pe4BK6y2EM/1600x900') no-repeat center center/ cover;
+}
+
+.events-wrapper{
+    backdrop-filter: blur(4px);
 }
 
 .rsvp-form {
