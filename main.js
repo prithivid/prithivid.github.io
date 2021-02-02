@@ -55,7 +55,7 @@ function dateDifference() {
     // console.log(diffTime + " milliseconds");
     // console.log(diffDays + " days");    
     // return diffDays;
-    document.getElementById("rdays").innerHTML= "Happily married " + (diffDays-1) + " ago!";
+    document.getElementById("rdays").innerHTML= "Happily married " + (diffDays-1) + " days ago!";
 }
 
 window.onload = dateDifference;
